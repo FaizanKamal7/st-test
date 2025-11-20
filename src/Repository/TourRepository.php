@@ -22,7 +22,7 @@ class TourRepository extends ServiceEntityRepository
        public function getLastThreeTour(): array
        {
            return $this->createQueryBuilder('t')
-               ->orderBy('t.endDate', 'ASC')
+               ->orderBy('t.endDate', 'DESC')
                ->setMaxResults(3)
                ->getQuery()
                ->getResult()

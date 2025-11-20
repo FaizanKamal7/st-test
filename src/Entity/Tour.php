@@ -29,6 +29,7 @@ class Tour
     private ?Companion $companion = null;
 
     // simple array of strings for tags
+    // TODO: consider using a separate Tag entity for more complex scenarios
     #[ORM\Column(type: 'simple_array', nullable: true)]
     private array $tags = [];
 
