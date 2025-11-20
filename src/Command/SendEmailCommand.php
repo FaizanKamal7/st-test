@@ -36,7 +36,7 @@ class SendEmailCommand extends Command
         $recipient = $input->getArgument('recipient');
 
         if ($recipient) {
-            $io->note(sprintf('Your tour starts on: %s', DateTime::createFromFormat('d-m-Y', now())->format('d-m-Y')));
+            $io->note(sprintf('Your tour starts on: %s', DateTime::createFromFormat('d-m-Y', json_encode(DateTime::now()))->format('d-m-Y')));
         }
 
 

@@ -7,7 +7,7 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 class SurfacePressure
 {
     // TODO: implement HttpClientInterface and use it for API calls
-    // TODO: get endpoint DWD_ENDPOINT from environment variables or configuration
+    // TODO: get endpoint symfoDWD_ENDPOINT from environment variables or configuration
 
     private string $endpoint;
 
